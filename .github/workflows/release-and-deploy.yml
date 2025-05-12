@@ -1,6 +1,18 @@
 name: Release and Deploy
 
 on:
+  push: 
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+      - 'LICENSE'
+      - 'docs/**'
+      - '.github/**/*.md'
+      - '**/*.test.js'
+      - '**/*.spec.js'
+      - '.env.example'
   workflow_dispatch:
     inputs:
       version_type:
@@ -88,9 +100,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger Netlify Build
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --build --prod
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/68216df4576dd60c43636a4f
+          
