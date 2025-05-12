@@ -42,9 +42,10 @@ export default function PostPage() {
   }
 
   // Parse the HTML content to render it properly
-  // First, trim any extra whitespace from the template literal
-  const trimmedContent = post.content.trim();
-  const contentHtml = { __html: trimmedContent };
+  // Process the content to ensure consistent rendering between server and client
+  // Replace multiple whitespaces with a single space and trim
+  const processedContent = post.content.replace(/\s+/g, ' ').trim();
+  const contentHtml = { __html: processedContent };
 
   // Create a post object with the content as a React component
   const postWithHtmlContent = {

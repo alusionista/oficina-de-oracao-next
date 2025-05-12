@@ -1,88 +1,88 @@
-# Vatican News Inspired Blog with shadcn UI
+# Oficina de Oração - Blog de Reflexões Bíblicas
 
-A blog website inspired by Vatican News, built with Next.js and shadcn UI components.
+Um blog de reflexões bíblicas e meditações diárias sobre o Antigo Testamento, Rei Davi e obediência a Deus, construído com Next.js e componentes shadcn UI.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
 
-## Features
+## Características
 
-- Modern, responsive design inspired by Vatican News
-- Built with Next.js and Tailwind CSS
-- Uses shadcn UI components for a consistent and beautiful UI
-- Blog post listing with featured posts
-- Individual blog post pages
-- Responsive sidebar with recent posts and categories
-- Mobile-friendly navigation
+- Design moderno e responsivo
+- Construído com Next.js e Tailwind CSS
+- Utiliza componentes shadcn UI para uma interface consistente e bonita
+- Listagem de postagens com destaque
+- Páginas individuais para cada postagem
+- Barra lateral responsiva com postagens recentes e categorias
+- Navegação otimizada para dispositivos móveis
 
-## Table of Contents:
+## Índice:
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Customization](#customization)
-- [Deployment](#deployment)
+- [Características](#características)
+- [Tecnologias](#tecnologias)
+- [Começando](#começando)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Personalização](#personalização)
+- [Implantação](#implantação)
 
-## Tech Stack
+## Tecnologias
 
-- [Next.js](https://nextjs.org/) - React framework for server-rendered applications
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [shadcn UI](https://ui.shadcn.com/) - Re-usable UI components built with Radix UI and Tailwind CSS
-- [Lucide Icons](https://lucide.dev/) - Beautiful open-source icons
+- [Next.js](https://nextjs.org/) - Framework React para aplicações renderizadas no servidor
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [shadcn UI](https://ui.shadcn.com/) - Componentes UI reutilizáveis construídos com Radix UI e Tailwind CSS
+- [Lucide Icons](https://lucide.dev/) - Ícones de código aberto bonitos
 
-## Getting Started
+## Começando
 
-First, install the dependencies:
+Primeiro, instale as dependências:
 
 ```bash
 npm install
 ```
 
-Then, run the development server:
+Em seguida, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-## Project Structure
+## Estrutura do Projeto
 
-- `/components` - React components
-  - `/blog` - Blog-specific components (BlogCard, FeaturedPost, BlogPostDetail)
-  - `/layout` - Layout components (Header, Footer, Sidebar, Layout)
-  - `/ui` - shadcn UI components
-- `/data` - Mock data for the blog
-- `/pages` - Next.js pages
-  - `/post` - Dynamic blog post pages
-- `/styles` - Global styles and Tailwind configuration
-- `/public` - Static assets
+- `/components` - Componentes React
+  - `/blog` - Componentes específicos do blog (BlogCard, FeaturedPost, BlogPostDetail)
+  - `/layout` - Componentes de layout (Header, Footer, Sidebar, Layout)
+  - `/ui` - Componentes shadcn UI
+- `/data` - Dados simulados para o blog
+- `/pages` - Páginas Next.js
+  - `/post` - Páginas dinâmicas de postagens
+- `/styles` - Estilos globais e configuração do Tailwind
+- `/public` - Ativos estáticos
 
-## Customization
+## Personalização
 
-### Styling
+### Estilo
 
-The project uses Tailwind CSS for styling. You can customize the colors, fonts, and other design tokens in the `tailwind.config.js` file.
+O projeto usa Tailwind CSS para estilização. Você pode personalizar as cores, fontes e outros tokens de design no arquivo `tailwind.config.js`.
 
-### Content
+### Conteúdo
 
-The blog posts are stored in the `data/posts.js` file. You can add, remove, or modify the posts in this file.
+As postagens do blog estão armazenadas no arquivo `data/posts.js`. Você pode adicionar, remover ou modificar as postagens neste arquivo.
 
-### Components
+### Componentes
 
-The UI components are built with shadcn UI. You can customize these components or add new ones as needed.
+Os componentes de UI são construídos com shadcn UI. Você pode personalizar esses componentes ou adicionar novos conforme necessário.
 
-## Testing
+## Testes
 
-### Included Default Testing
+### Testes Padrão Incluídos
 
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
+Incluímos algumas ferramentas que nos ajudam a manter estes templates. Este template atualmente usa:
 
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - para atualizar regularmente nossas dependências
+- [Cypress](https://www.cypress.io/) - para executar testes sobre como o template funciona no navegador
+- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - para executar nossos testes durante o processo de build
 
-If your team is not interested in this tooling, you can remove them with ease!
+Se sua equipe não estiver interessada nessas ferramentas, você pode removê-las facilmente!
 
 ### Removing Renovate
 

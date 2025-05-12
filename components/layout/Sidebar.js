@@ -11,7 +11,7 @@ export default function Sidebar({ open, onClose }) {
           onClick={onClose}
         />
       )}
-      
+
       {/* Mobile sidebar */}
       <aside 
         className={`fixed inset-y-0 right-0 z-50 w-64 transform bg-white p-6 shadow-lg transition-transform duration-200 ease-in-out md:static md:z-0 md:w-72 md:translate-x-0 md:shadow-none ${
@@ -23,99 +23,99 @@ export default function Sidebar({ open, onClose }) {
           <button 
             onClick={onClose}
             className="rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-            aria-label="Close menu"
+            aria-label="Fechar menu"
           >
             <X className="h-5 w-5" />
           </button>
         </div>
-        
+
         <nav className="mb-8 md:hidden">
           <ul className="space-y-3">
             <li>
               <Link href="/" className="block text-sm font-medium text-foreground hover:text-primary">
-                Home
+                Início
               </Link>
             </li>
             <li>
               <Link href="/categories" className="block text-sm font-medium text-foreground hover:text-primary">
-                Categories
+                Categorias
               </Link>
             </li>
             <li>
               <Link href="/about" className="block text-sm font-medium text-foreground hover:text-primary">
-                About
+                Sobre
               </Link>
             </li>
             <li>
               <Link href="/contact" className="block text-sm font-medium text-foreground hover:text-primary">
-                Contact
+                Contato
               </Link>
             </li>
           </ul>
         </nav>
-        
+
         {/* Sidebar content - visible on all screen sizes */}
         <div className="space-y-6">
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Recent Posts</h3>
+            <h3 className="mb-3 text-lg font-semibold">Postagens Recentes</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/post/1" className="block text-sm text-muted-foreground hover:text-foreground">
-                  Pope Francis calls for peace in troubled regions
+                  A vida de Davi: Lições de um homem segundo o coração de Deus
                 </Link>
               </li>
               <li>
                 <Link href="/post/2" className="block text-sm text-muted-foreground hover:text-foreground">
-                  Vatican hosts international conference on climate change
+                  Obediência a Deus em tempos difíceis: O exemplo de Daniel
                 </Link>
               </li>
               <li>
                 <Link href="/post/3" className="block text-sm text-muted-foreground hover:text-foreground">
-                  New appointments in the Roman Curia announced
+                  Meditação sobre os Salmos: Encontrando paz nas promessas de Deus
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Categories</h3>
+            <h3 className="mb-3 text-lg font-semibold">Categorias</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/category/pope" className="block text-sm text-muted-foreground hover:text-foreground">
-                  Pope
+                <Link href="/category/antigo-testamento" className="block text-sm text-muted-foreground hover:text-foreground">
+                  Antigo Testamento
                 </Link>
               </li>
               <li>
-                <Link href="/category/vatican" className="block text-sm text-muted-foreground hover:text-foreground">
-                  Vatican
+                <Link href="/category/rei-davi" className="block text-sm text-muted-foreground hover:text-foreground">
+                  Rei Davi
                 </Link>
               </li>
               <li>
-                <Link href="/category/church" className="block text-sm text-muted-foreground hover:text-foreground">
-                  Church
+                <Link href="/category/obediencia" className="block text-sm text-muted-foreground hover:text-foreground">
+                  Obediência a Deus
                 </Link>
               </li>
               <li>
-                <Link href="/category/world" className="block text-sm text-muted-foreground hover:text-foreground">
-                  World
+                <Link href="/category/palavra-do-dia" className="block text-sm text-muted-foreground hover:text-foreground">
+                  Palavra do Dia
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Subscribe</h3>
+            <h3 className="mb-3 text-lg font-semibold">Inscreva-se</h3>
             <p className="mb-3 text-sm text-muted-foreground">
-              Stay updated with our latest news and articles
+              Receba nossas reflexões bíblicas e meditações diárias
             </p>
             <div className="flex flex-col space-y-2">
               <input 
                 type="email" 
-                placeholder="Your email" 
+                placeholder="Seu email" 
                 className="rounded-md border border-input bg-background px-3 py-2 text-sm"
               />
               <button className="rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90">
-                Subscribe
+                Inscrever-se
               </button>
             </div>
           </div>

@@ -9,34 +9,34 @@ export default function Header({ onMenuClick }) {
           <button 
             onClick={onMenuClick}
             className="mr-2 rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground md:hidden"
-            aria-label="Toggle menu"
+            aria-label="Abrir menu"
           >
             <Menu className="h-6 w-6" />
           </button>
-          
+
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">Vatican News Inspired Blog</span>
+            <span className="text-xl font-bold text-primary">Oficina de Oração</span>
           </Link>
         </div>
-        
+
         <nav className="hidden md:flex md:items-center md:space-x-4">
           <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-            Home
+            Início
           </Link>
           <Link href="/categories" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-            Categories
+            Categorias
           </Link>
           <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-            About
+            Sobre
           </Link>
           <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-            Contact
+            Contato
           </Link>
         </nav>
-        
+
         <div className="flex items-center space-x-4">
           <button className="rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90">
-            Subscribe
+            Inscrever-se
           </button>
         </div>
       </div>
