@@ -1,50 +1,76 @@
-# Next + Netlify Starter
+# Vatican News Inspired Blog with shadcn UI
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
-
-This is a [Next.js](https://nextjs.org/) v15 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
-
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. With Netlify, you'll have access to features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing on deploy automatically.
+A blog website inspired by Vatican News, built with Next.js and shadcn UI components.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+## Features
+
+- Modern, responsive design inspired by Vatican News
+- Built with Next.js and Tailwind CSS
+- Uses shadcn UI components for a consistent and beautiful UI
+- Blog post listing with featured posts
+- Individual blog post pages
+- Responsive sidebar with recent posts and categories
+- Mobile-friendly navigation
 
 ## Table of Contents:
 
+- [Features](#features)
+- [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-- [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Deployment](#deployment)
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for server-rendered applications
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [shadcn UI](https://ui.shadcn.com/) - Re-usable UI components built with Radix UI and Tailwind CSS
+- [Lucide Icons](https://lucide.dev/) - Beautiful open-source icons
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-### Installation options
+- `/components` - React components
+  - `/blog` - Blog-specific components (BlogCard, FeaturedPost, BlogPostDetail)
+  - `/layout` - Layout components (Header, Footer, Sidebar, Layout)
+  - `/ui` - shadcn UI components
+- `/data` - Mock data for the blog
+- `/pages` - Next.js pages
+  - `/post` - Dynamic blog post pages
+- `/styles` - Global styles and Tailwind configuration
+- `/public` - Static assets
 
-**Option one:** One-click deploy
+## Customization
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+### Styling
 
-**Option two:** Manual clone
+The project uses Tailwind CSS for styling. You can customize the colors, fonts, and other design tokens in the `tailwind.config.js` file.
 
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
+### Content
+
+The blog posts are stored in the `data/posts.js` file. You can add, remove, or modify the posts in this file.
+
+### Components
+
+The UI components are built with shadcn UI. You can customize these components or add new ones as needed.
 
 ## Testing
 
