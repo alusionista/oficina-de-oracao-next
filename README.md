@@ -22,6 +22,9 @@ Um blog de reflexões bíblicas e meditações diárias sobre o Antigo Testament
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Personalização](#personalização)
 - [Implantação](#implantação)
+  - [GitHub Actions Workflow](#github-actions-workflow)
+  - [Configuração do Netlify](#configuração-do-netlify)
+- [Testes](#testes)
 
 ## Tecnologias
 
@@ -71,6 +74,33 @@ As postagens do blog estão armazenadas no arquivo `data/posts.js`. Você pode a
 ### Componentes
 
 Os componentes de UI são construídos com shadcn UI. Você pode personalizar esses componentes ou adicionar novos conforme necessário.
+
+## Implantação
+
+### GitHub Actions Workflow
+
+Este projeto inclui um workflow do GitHub Actions para automatizar o processo de atualização de versão e implantação no Netlify. O workflow pode ser acionado manualmente e realiza as seguintes tarefas:
+
+1. Atualiza a versão no arquivo package.json (patch, minor ou major)
+2. Cria uma release no GitHub com a nova versão
+3. Aciona uma build no Netlify para implantar as alterações
+
+#### Como usar o workflow:
+
+1. Vá para a aba "Actions" no repositório do GitHub
+2. Selecione o workflow "Release and Deploy"
+3. Clique em "Run workflow"
+4. Escolha o tipo de atualização de versão (patch, minor ou major)
+5. Clique em "Run workflow" para iniciar o processo
+
+Para que o workflow funcione corretamente, você precisa configurar os seguintes secrets no seu repositório GitHub:
+
+- `NETLIFY_AUTH_TOKEN`: Token de autenticação do Netlify
+- `NETLIFY_SITE_ID`: ID do site no Netlify
+
+### Configuração do Netlify
+
+O projeto está configurado para ser implantado no Netlify. A configuração está no arquivo `netlify.toml`.
 
 ## Testes
 
